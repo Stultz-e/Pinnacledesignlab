@@ -10810,8 +10810,44 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.pd {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .pd {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .pd {
+    padding-bottom: 3rem;
+  }
+}
+
+.pu {
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .pu {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .pu {
+    padding-top: 3rem;
+  }
+}
+
 body {
   background-color: #ffffff;
+}
+
+p {
+  font-weight: 300;
 }
 
 h1 {
@@ -10893,10 +10929,26 @@ h1::after {
 }
 
 .projects {
-  padding: 6rem 0;
   position: relative;
+  padding: 1rem 0 0;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding: 5.5rem 0;
+  }
 }
 
 .projects__header {
-  padding-bottom: 5.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .projects__header {
+    padding-bottom: 5rem;
+  }
+}
+
+.projects a {
+  display: inline-block;
 }

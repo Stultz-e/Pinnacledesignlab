@@ -1,8 +1,21 @@
 .projects {
-    padding: 6rem 0;
     position: relative;
+    padding: 1rem 0 0;
+    @include media-breakpoint-up(md) {
+        padding: 5.5rem 0;
+    }
+
 
     &__header {
-        padding-bottom: 5.5rem;
+        padding-bottom: 2.5rem;
+        @include media-breakpoint-up(md) {
+            padding-bottom: 5rem;
+        }
     }
+
+    a {
+        display: inline-block;
+    }
+
+ 
 }

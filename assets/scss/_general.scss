@@ -1,6 +1,10 @@
 // General Style
 body { background-color: $white; }
 
+p {
+    font-weight: $body-weight;
+}
+
 h1 {
     text-transform: uppercase;
     position: relative;
