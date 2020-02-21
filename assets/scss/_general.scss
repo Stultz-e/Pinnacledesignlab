@@ -24,3 +24,9 @@ h1 {
         bottom: -7px;
     }
 }
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
