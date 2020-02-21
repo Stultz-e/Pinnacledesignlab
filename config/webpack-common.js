@@ -18,7 +18,6 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
-			template: './src/project-1.html',
 		}),
 		new webpack.ProvidePlugin({
 			SVGInjector: 'svg-injector-2'
