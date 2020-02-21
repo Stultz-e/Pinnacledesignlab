@@ -1,1 +1,22 @@
 // General Style
+body { background-color: $white; }
+
+h1 {
+    text-transform: uppercase;
+    position: relative;
+    font-weight: $h1weight;
+    font-family: $font-family-headings;
+    border-bottom: 1px solid $dark;
+    text-align: center;
+
+    &::after {
+        height: 1px;
+        width: 45px;
+        position: absolute;
+        content: "";
+        background-color: $dark;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -7px;
+    }
+}

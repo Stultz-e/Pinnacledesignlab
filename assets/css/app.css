@@ -1,22 +1,5 @@
 /***REFERENCE DEFAULTS***/
 @import url("https://use.typekit.net/swi3sol.css");
-h1 {
-  font-size: 1875rem;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.125;
-}
-
-p {
-  font-size: 1rem;
-}
-
 /* $headings-font-weight: $font-weight-normal; */
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -81,7 +64,7 @@ body {
   line-height: 1.5;
   color: #090B0A;
   text-align: left;
-  background-color: #F6F6F6;
+  background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -392,33 +375,27 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
 }
 
 @media (max-width: 1200px) {
   h1, .h1 {
-    font-size: calc(1.375rem + 1.5vw) ;
+    font-size: calc(1.3125rem + 0.75vw) ;
   }
 }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1200px) {
   h2, .h2 {
-    font-size: calc(1.325rem + 0.9vw) ;
+    font-size: calc(1.275rem + 0.3vw) ;
   }
 }
 
 h3, .h3 {
-  font-size: 1.75rem;
-}
-
-@media (max-width: 1200px) {
-  h3, .h3 {
-    font-size: calc(1.3rem + 0.6vw) ;
-  }
+  font-size: 1.125rem;
 }
 
 h4, .h4 {
@@ -556,7 +533,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #F6F6F6;
+  background-color: #ffffff;
   border: 1px solid #d8d8d8;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -4408,16 +4385,16 @@ input[type="button"].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 0 0 1px #F6F6F6, 0 0 0 0.2rem rgba(22, 16, 11, 0.25);
-          box-shadow: 0 0 0 1px #F6F6F6, 0 0 0 0.2rem rgba(22, 16, 11, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(22, 16, 11, 0.25);
+          box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(22, 16, 11, 0.25);
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #F6F6F6, 0 0 0 0.2rem rgba(22, 16, 11, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(22, 16, 11, 0.25);
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #F6F6F6, 0 0 0 0.2rem rgba(22, 16, 11, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(22, 16, 11, 0.25);
 }
 
 .custom-range::-moz-focus-outer {
@@ -4634,8 +4611,8 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #494949;
-  background-color: #F6F6F6;
-  border-color: #d8d8d8 #d8d8d8 #F6F6F6;
+  background-color: #ffffff;
+  border-color: #d8d8d8 #d8d8d8 #ffffff;
 }
 
 .nav-tabs .dropdown-menu {
@@ -10833,6 +10810,48 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+body {
+  background-color: #ffffff;
+}
+
+h1 {
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 800;
+  font-family: "proxima-nova-extra-condensed", sans-serif;
+  border-bottom: 1px solid #090B0A;
+  text-align: center;
+}
+
+h1::after {
+  height: 1px;
+  width: 45px;
+  position: absolute;
+  content: "";
+  background-color: #090B0A;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  bottom: -7px;
+}
+
+.copy {
+  background-color: #F6F6F6;
+  padding: 2rem 0;
+}
+
+@media (min-width: 992px) {
+  .copy {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .copy {
+    padding: 4rem 0;
+  }
+}
+
 .hero {
   height: 100vh;
   background-image: url("/assets/img/hero.jpg");
@@ -10841,14 +10860,19 @@ a.text-dark:hover, a.text-dark:focus {
   background-attachment: fixed;
 }
 
-.hero img {
-  position: absolute;
+.hero__menu {
+  z-index: 3;
+  right: 2rem;
+  top: 2rem;
+}
+
+.hero__logo {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   top: 38%;
   left: 50%;
   z-index: 3;
-  max-width: 60vw;
+  max-width: 60%;
 }
 
 .hero:after {
@@ -10858,4 +10882,21 @@ a.text-dark:hover, a.text-dark:focus {
   height: 100vh;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero__arrow-down {
+  bottom: 2rem;
+  z-index: 4;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.projects {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.projects__header {
+  padding-bottom: 5.5rem;
 }

@@ -9,11 +9,11 @@ $gray-700: #494949;
 $gray-800: #16100B; //H1 
 $gray-900: #090B0A; // Body text
 $dark: $gray-900;
-$body-bg: $gray-200;
+$body-bg: $white;
 
 
 /***REFERENCE DEFAULTS***/
-$font-weight-bold: 800 !default;
+$font-weight-bold: 700 !default;
 $font-weight-normal: 400 !default;
 $primary: $gray-800;
 $box-shadow: 1px 1px 5px rgba($black, .2);
@@ -22,17 +22,17 @@ $box-shadow: 1px 1px 5px rgba($black, .2);
 $enable-responsive-font-sizes: true;
 @import url("https://use.typekit.net/swi3sol.css");
 $font-family-sans-serif: 'proxima-nova-condensed', sans-serif;
+
 $font-weight-bold: 800;
 $line-height-sm: 1.2;
 
 //Headings
-h1 { 
-    font-size: 1875rem; 
-    text-transform: uppercase;
-}
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.125; }
-p { font-size: 1rem; }
+$h1-font-size: 1.875rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.125rem;
+
+
+
 
 $headings-margin-bottom: .5em;
 /* $headings-font-weight: $font-weight-normal; */
@@ -42,6 +42,7 @@ $headings-line-height: 1.1;
 //Links
 $link-color: $black;
 $link-hover-color: lighten($link-color, 15%); 
+
 
 
 //Material Design Icons
