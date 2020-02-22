@@ -1,0 +1,5 @@
+.ourteam {
+    @include media-breakpoint-up(md) {
+        padding: 5.5rem 0;
+    }
+}

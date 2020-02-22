@@ -32,8 +32,6 @@ $h2-font-size: 1.5rem;
 $h3-font-size: 1.125rem;
 
 
-
-
 $headings-margin-bottom: .5em;
 /* $headings-font-weight: $font-weight-normal; */
 $headings-color: $primary;
@@ -43,7 +41,13 @@ $headings-line-height: 1.1;
 $link-color: $black;
 $link-hover-color: lighten($link-color, 15%); 
 
+//forms 
+$input-color: transparent !default;
 
+//buttons 
+.btn {
+    text-transform: uppercase;
+}
 
 //Material Design Icons
 // $mdi-font-path: "~@mdi/font/fonts";
