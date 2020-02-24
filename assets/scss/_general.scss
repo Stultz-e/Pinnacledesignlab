@@ -26,6 +26,7 @@ h1 {
 }
 
 a {
+    transition: ease-in-out all 200ms;
     &:hover {
         text-decoration: none;
     }
@@ -40,3 +41,5 @@ a {
         border: solid 2px $white;
     }
 }
+
+select option:hover { color: $black;}

@@ -1,5 +1,8 @@
 //JQuery Module Pattern
 
+
+
+
 // An object literal
 var app = {
   init: function() {
@@ -10,4 +13,5 @@ var app = {
 };
 $("document").ready(function () {
   app.init();
+  AOS.init();
 });

@@ -10871,6 +10871,11 @@ h1::after {
   bottom: -7px;
 }
 
+a {
+  -webkit-transition: ease-in-out all 200ms;
+  transition: ease-in-out all 200ms;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -10885,6 +10890,10 @@ a:hover {
 .btn:hover {
   background-color: rgba(0, 0, 0, 0.6);
   border: solid 2px #ffffff;
+}
+
+select option:hover {
+  color: #000000;
 }
 
 .copy {
@@ -11118,6 +11127,10 @@ a:hover {
 
 .workwithus__header::after {
   background-color: #ffffff;
+}
+
+.ourteam {
+  padding: 2.25rem 0;
 }
 
 @media (min-width: 768px) {
