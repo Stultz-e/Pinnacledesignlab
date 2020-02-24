@@ -11056,13 +11056,15 @@ a:hover {
 .whatwedo__card-bg {
   background-color: #F6F6F6;
   padding: 2rem 0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .whatwedo__card-bg:hover {
   -webkit-box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .workwithus {
@@ -11125,15 +11127,15 @@ a:hover {
 }
 
 .ourteam__teammate {
-  -webkit-transition: 200ms ease-in all;
-  transition: 200ms ease-in all;
+  -webkit-transition: 200ms ease-in-out all;
+  transition: 200ms ease-in-out all;
 }
 
 .ourteam__teammate:hover {
-  -webkit-box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.1);
-          box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.1);
-  -webkit-transform: rotateY(90deg);
-          transform: rotateY(90deg);
+  -webkit-box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.2);
+          box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 footer {

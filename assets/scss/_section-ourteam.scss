@@ -4,10 +4,10 @@
     }
 
     &__teammate {
-        transition: 200ms ease-in all;
+        transition: 200ms ease-in-out all;
         &:hover {
-            box-shadow: 7px 7px 11px rgba($color: $black, $alpha: .1);
-            transform: rotateY(90deg);
+            box-shadow: 7px 7px 11px rgba($color: $black, $alpha: .2);
+            transform: scale(1.1);
         }
     }
 }
