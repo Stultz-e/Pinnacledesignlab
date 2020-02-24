@@ -1,10 +1,6 @@
 /***REFERENCE DEFAULTS***/
 @import url("https://use.typekit.net/swi3sol.css");
 /* $headings-font-weight: $font-weight-normal; */
-.btn {
-  text-transform: uppercase;
-}
-
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -167,7 +163,7 @@ a {
 }
 
 a:hover {
-  color: #262626;
+  color: #333333;
   text-decoration: underline;
 }
 
@@ -3414,7 +3410,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #262626;
+  color: #333333;
   text-decoration: underline;
 }
 
@@ -5407,7 +5403,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #262626;
+  color: #333333;
   text-decoration: none;
   background-color: #F6F6F6;
   border-color: #d8d8d8;
@@ -10879,6 +10875,18 @@ a:hover {
   text-decoration: none;
 }
 
+.btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: solid 2px #ffffff;
+}
+
 .copy {
   background-color: #F6F6F6;
   padding: 3rem 0;
@@ -10919,7 +10927,7 @@ a:hover {
   max-width: 60%;
 }
 
-.hero:after {
+.hero::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -10944,6 +10952,10 @@ a:hover {
 
 .hero__social-media a {
   color: #ffffff;
+}
+
+.hero__social-media a:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .projects {
@@ -11044,6 +11056,13 @@ a:hover {
 .whatwedo__card-bg {
   background-color: #F6F6F6;
   padding: 2rem 0;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+
+.whatwedo__card-bg:hover {
+  -webkit-box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.1);
 }
 
 .workwithus {
@@ -11105,11 +11124,24 @@ a:hover {
   }
 }
 
+.ourteam__teammate {
+  -webkit-transition: 200ms ease-in all;
+  transition: 200ms ease-in all;
+}
+
+.ourteam__teammate:hover {
+  -webkit-box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
 footer {
   z-index: 1;
   background-image: url("/assets/img/footer-bg.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
   padding: 5rem 0;
   max-width: 100%;
 }
@@ -11126,5 +11158,8 @@ footer::after {
 
 footer a {
   color: #ffffff;
-  font-weight: 300;
+}
+
+footer a:hover {
+  color: rgba(255, 255, 255, 0.7);
 }

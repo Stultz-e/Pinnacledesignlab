@@ -30,3 +30,13 @@ a {
         text-decoration: none;
     }
 }
+
+.btn {
+    text-transform: uppercase;
+    border-radius: 0;
+    transition: ease-in .2s;
+    &:hover {
+        background-color: rgba($black, .6);
+        border: solid 2px $white;
+    }
+}

@@ -19,13 +19,13 @@
         max-width: 60%;
     }
     
-    &:after {
+    &::before {
         content: "";
         position: absolute;
         width: 100%;
         height: 100vh;
         z-index: 2;
-        background-color: rgba($color: $dark, $alpha: .7)
+        background-color: rgba($color: $dark, $alpha: .7);
     }
 
     &__arrow-down {
@@ -41,6 +41,9 @@
         z-index: 3;
         a {
             color: $white;
+            &:hover {
+                color: rgba($white, $alpha: .7)
+            }
         }
     }
 }

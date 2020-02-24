@@ -2,7 +2,8 @@ footer {
     z-index: 1;
     background-image: url('/assets/img/footer-bg.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-attachment: fixed;
     padding: 5rem 0;
     max-width: 100%;
 
@@ -16,8 +17,10 @@ footer {
         z-index: -1;
     }
 
-    a { 
+    a {
         color: $white;
-        font-weight: 300;
+        &:hover {
+            color: rgba($color: $white, $alpha: .7);
+        }
     }
 }

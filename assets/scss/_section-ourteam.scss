@@ -2,4 +2,12 @@
     @include media-breakpoint-up(md) {
         padding: 5.5rem 0;
     }
+
+    &__teammate {
+        transition: 200ms ease-in all;
+        &:hover {
+            box-shadow: 7px 7px 11px rgba($color: $black, $alpha: .1);
+            transform: rotateY(90deg);
+        }
+    }
 }

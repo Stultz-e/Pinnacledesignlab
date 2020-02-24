@@ -38,5 +38,10 @@
     &__card-bg {
         background-color: $gray-200;
         padding: 2rem 0;
+        transition: 200ms ease-in;
+
+        &:hover {
+            box-shadow: 7px 7px 11px rgba($color: $black, $alpha: .1);
+        }
     }
 }

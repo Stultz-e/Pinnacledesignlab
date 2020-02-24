@@ -39,15 +39,13 @@ $headings-line-height: 1.1;
 
 //Links
 $link-color: $black;
-$link-hover-color: lighten($link-color, 15%); 
+$link-hover-color: lighten($link-color, 20%); 
 
 //forms 
 $input-color: transparent !default;
 
 //buttons 
-.btn {
-    text-transform: uppercase;
-}
+
 
 //Material Design Icons
 // $mdi-font-path: "~@mdi/font/fonts";
