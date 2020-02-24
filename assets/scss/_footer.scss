@@ -1,10 +1,13 @@
 footer {
+    padding: 3rem 0 2.5rem 0;
+    @include media-breakpoint-up(lg) {
+        padding: 5rem 0;
+    }
     z-index: 1;
     background-image: url('/assets/img/footer-bg.jpg');
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
-    padding: 5rem 0;
     max-width: 100%;
 
     &::after {
@@ -23,4 +26,5 @@ footer {
             color: rgba($color: $white, $alpha: .7);
         }
     }
+    
 }

@@ -11152,13 +11152,19 @@ select option:hover {
 }
 
 footer {
+  padding: 3rem 0 2.5rem 0;
   z-index: 1;
   background-image: url("/assets/img/footer-bg.jpg");
   background-position: center;
   background-size: contain;
   background-attachment: fixed;
-  padding: 5rem 0;
   max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 5rem 0;
+  }
 }
 
 footer::after {
