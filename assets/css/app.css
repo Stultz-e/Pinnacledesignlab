@@ -10896,6 +10896,26 @@ select {
   color: #000000 !important;
 }
 
+.dark-bg {
+  background-color: #16100B;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.grey-bg {
+  background-color: #F6F6F6;
+}
+
+.black-text {
+  color: #000000;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
 .copy {
   background-color: #F6F6F6;
   padding: 3rem 0;
@@ -11156,6 +11176,102 @@ select {
           box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.interior-hero {
+  height: 45vh;
+  background-image: url("/assets/img/interior-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.interior-hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 45vh;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(9, 11, 10, 0.7);
+}
+
+.interior-hero__menu {
+  z-index: 3;
+  right: 2rem;
+  top: 2rem;
+}
+
+.interior-hero__logo {
+  z-index: 3;
+  max-width: 8.18rem;
+}
+
+@media (min-width: 768px) {
+  .interior-hero__logo {
+    max-width: 16.365rem;
+  }
+}
+
+.interior-hero__social-media {
+  top: 24px;
+  left: 24px;
+  z-index: 3;
+}
+
+.interior-hero__social-media a {
+  color: #ffffff;
+}
+
+.interior-hero__social-media a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.projects--interior h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "proxima-nova-extra-condensed", sans-serif;
+  font-size: 1.875rem;
+}
+
+@media (max-width: 1200px) {
+  .projects--interior h2 {
+    font-size: calc(1.3125rem + 0.75vw) ;
+  }
+}
+
+.interior-article {
+  padding: 2.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .interior-article {
+    padding: 5rem 0;
+  }
+}
+
+.interior-article--split {
+  padding: 2.4rem 0;
+}
+
+@media (min-width: 768px) {
+  .interior-article--split {
+    padding: 5rem 0;
+  }
+}
+
+.pagination a {
+  cursor: pointer;
+}
+
+.pagination img {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 footer {
