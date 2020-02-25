@@ -10892,8 +10892,8 @@ a:hover {
   border: solid 2px #ffffff;
 }
 
-select option:hover {
-  color: #000000;
+select {
+  color: #000000 !important;
 }
 
 .copy {
@@ -11159,7 +11159,7 @@ select option:hover {
 }
 
 footer {
-  padding: 3rem 0 2.5rem 0;
+  padding: 2rem 0;
   z-index: 1;
   background-image: url("/assets/img/footer-bg.jpg");
   background-position: center;

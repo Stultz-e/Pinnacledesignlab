@@ -42,4 +42,7 @@ a {
     }
 }
 
-select option:hover { color: $black;}
+select {
+    color: $black !important;
+}
+
