@@ -10919,6 +10919,12 @@ select option:hover {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero__menu {
@@ -10928,12 +10934,16 @@ select option:hover {
 }
 
 .hero__logo {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 38%;
-  left: 50%;
   z-index: 3;
-  max-width: 60%;
+  max-width: 16.365rem;
+  margin-top: -6rem;
+}
+
+@media (min-width: 768px) {
+  .hero__logo {
+    max-width: 23.365rem;
+    margin-top: -16rem;
+  }
 }
 
 .hero::before {
@@ -10948,9 +10958,6 @@ select option:hover {
 .hero__arrow-down {
   bottom: 2rem;
   z-index: 4;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
 }
 
 .hero__social-media {
@@ -11179,6 +11186,13 @@ footer::after {
 
 footer a {
   color: #ffffff;
+  font-size: .8rem;
+}
+
+@media (min-width: 992px) {
+  footer a {
+    font-size: 1rem;
+  }
 }
 
 footer a:hover {
