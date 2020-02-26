@@ -10896,6 +10896,10 @@ select {
   color: #000000 !important;
 }
 
+input {
+  color: #000000 !important;
+}
+
 .dark-bg {
   background-color: #16100B;
 }
