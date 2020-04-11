@@ -1,0 +1,51 @@
+.workwithus {
+    padding: 4rem 0 5rem 0;
+    background-image: url('assets/contact-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 3;
+
+    &__form {
+        max-width: 624px;
+        z-index: 3;
+
+        label {
+            color: $white;
+        }
+
+        .form-control { 
+            border-radius: 0;
+            border: none;
+        }
+        
+        .not-selected {
+            color: $black;
+            background-color: $white;
+        }
+    }
+
+    &__form-btn {
+        background-color: transparent;
+        border: 2px solid $white;
+    }
+ 
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $dark, $alpha: .9);
+        top: 0;
+        z-index: -1;
+    }
+
+    &__header {
+        color: $white;
+        border-bottom: 1px solid $white;
+        z-index: 3;
+        &::after {
+            background-color: $white;
+        }
+    }
+}

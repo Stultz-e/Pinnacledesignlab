@@ -1,0 +1,88 @@
+// General Style
+body { 
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	image-rendering: -webkit-optimize-contrast;
+    font-size: 16px;
+    font-weight: $body-weight;
+    font-family: $font-family-sans-serif;
+}
+
+p {
+    color: $dark;
+}
+
+h1 {
+    text-transform: uppercase;
+    position: relative;
+    font-weight: $h1weight;
+    font-family: $font-family-headings;
+    border-bottom: 1px solid $dark;
+    text-align: center;
+
+    &::after {
+        height: 1px;
+        width: 45px;
+        position: absolute;
+        content: "";
+        background-color: $dark;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -7px;
+    }
+}
+
+h2, h3, h4 {
+    font-family: 'proxima-nova-extra-condensed';
+}
+
+a {
+    transition: ease-in-out all 200ms;
+    color: $black;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    border-radius: 0;
+    transition: ease-in .2s;
+    &:hover {
+        background-color: rgba($black, .6);
+        border: solid 2px $white;
+    }
+}
+
+select {
+    color: $black !important;
+}
+
+input {
+    color: $black !important;   
+}
+
+.dark-bg {
+    background-color: $gray-800; 
+}
+
+.white-bg {
+    background-color: $white;
+}
+
+.grey-bg {
+    background-color: $gray-200;
+}
+
+.black-text {
+    color: $black;
+}
+
+.white-text {
+    color: $white;
+}
+
+
+
+

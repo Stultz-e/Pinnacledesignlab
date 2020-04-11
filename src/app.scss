@@ -1,0 +1,21 @@
+// Custom bootstrap variable overrides
+@import "custom";
+@import '/node_modules/aos/dist/aos.css';
+@import "~bootstrap/scss/bootstrap";
+
+
+// Your style
+@import "variables";
+@import "mixins";
+@import "general";
+@import "layout";
+@import "module";
+@import "section-copy";
+@import "section-hero";
+@import "section-projects";
+@import "section-whatwedo";
+@import "section-workwithus";
+@import "section-ourteam";
+@import "section-interior-page";
+@import "footer";
+
